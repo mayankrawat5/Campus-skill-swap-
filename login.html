@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign in · CampusLoop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <main class="auth-layout">
+    <section class="auth-visual">
+      <a class="brand" href="login.html"><span class="brand-mark">↗</span><span>campus<span class="brand-light">loop</span></span></a>
+      <div class="visual-copy"><span class="eyebrow">YOUR CAMPUS. MORE CONNECTED.</span><h1>Big skills.<br><em>Small world.</em></h1><p>Learn from the people around you. Share what you know. Build a campus community where everyone has something to teach.</p>
+        <div class="visual-stats"><div><b>01</b><span>Share a skill</span></div><div><b>02</b><span>Find your match</span></div><div><b>03</b><span>Grow together</span></div></div>
+      </div>
+      <div class="floating-note note-one"><span class="note-icon purple">✳</span><div><b>Skill match found!</b><small>UI Design ↔ C++</small></div><span class="note-check">✓</span></div>
+      <div class="floating-note note-two"><span class="mini-avatars"><i>AS</i><i>PV</i><i>KM</i></span><div><b>Your people are here</b><small>Meet your next learning buddy</small></div></div>
+      <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
+      <span class="visual-footer">MADE FOR STUDENTS, BY COMMUNITY <span>✦</span></span>
+    </section>
+    <section class="auth-panel-wrap"><div class="auth-panel">
+      <div class="mobile-brand"><span class="brand-mark">↗</span><b>campus<span class="brand-light">loop</span></b></div>
+      <div class="auth-heading"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to your campus</h2><p>Pick up where your next skill swap begins.</p></div>
+      <form id="loginForm" class="auth-form">
+        <div class="form-field"><label for="email">Campus email</label><div class="input-wrap"><span>✉</span><input id="email" name="email" type="email" placeholder="you@college.edu" autocomplete="username" required></div></div>
+        <div class="form-field"><label for="password">Password</label><div class="input-wrap"><span>⌑</span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6"><button type="button" class="reveal" data-toggle-password="password" aria-label="Show password">◉</button></div></div>
+        <div class="form-row"><label class="check-label"><input type="checkbox" id="remember"> Keep me signed in</label><span class="quiet-label">Student community</span></div>
+        <p class="form-error" id="formError" role="alert"></p>
+        <button class="auth-submit" type="submit">Sign in <span>→</span></button>
+      </form>
+      <div class="auth-separator"><span>new to CampusLoop?</span></div>
+      <a class="secondary-submit" href="register.html">Create a student account <span>↗</span></a>
+      <button class="demo-submit" id="demoLogin" type="button"><span class="demo-icon">✦</span><span><b>Explore the demo</b><small>Continue with sample student Rahul</small></span><span class="demo-arrow">→</span></button>
+      <p class="auth-legal">By continuing, you agree to use CampusLoop respectfully and help keep your campus community welcoming.</p>
+    </div></section>
+  </main>
+  <div id="authToast" class="auth-toast" role="status"></div><script src="auth.js"></script>
+</body></html>

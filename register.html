@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join CampusLoop · Student registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="register-body">
+  <header class="register-top"><a class="brand" href="login.html"><span class="brand-mark">↗</span><span>campus<span class="brand-light">loop</span></span></a><div>Already part of the community? <a href="login.html">Sign in <span>→</span></a></div></header>
+  <main class="register-layout">
+    <aside class="register-aside"><div class="register-aside-art"><div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div><div class="art-center">✳</div><span class="art-chip chip-a">✦ UI design</span><span class="art-chip chip-b">⌘ Coding</span><span class="art-chip chip-c">↗ Public speaking</span></div><span class="eyebrow">A BETTER WAY TO LEARN TOGETHER</span><h1>Everyone knows<br><em>something.</em></h1><p>Bring your curiosity. Leave with new skills, new connections, and a little more confidence.</p><div class="benefit-list"><div><span>✓</span> Discover student mentors and peers</div><div><span>✓</span> Trade what you know for what you want to learn</div><div><span>✓</span> Track your learning journey</div></div></aside>
+    <section class="register-card"><div class="step-label"><span class="step-dot">01</span> YOUR STUDENT PROFILE</div><h2>Find your loop.</h2><p class="register-intro">Create your account and tell your campus a little about you.</p>
+      <form id="registerPageForm" class="auth-form register-form">
+        <div class="form-field"><label for="fullName">Full name</label><div class="input-wrap"><span>♙</span><input id="fullName" name="name" type="text" placeholder="e.g. Vaibhavi Saklani" autocomplete="name" minlength="2" required></div></div>
+        <div class="form-field"><label for="regEmail">Campus email</label><div class="input-wrap"><span>✉</span><input id="regEmail" name="email" type="email" placeholder="you@college.edu" autocomplete="email" required></div><small class="field-hint">Use an email address you can identify later.</small></div>
+        <div class="form-grid-auth"><div class="form-field"><label for="department">Department</label><div class="select-wrap"><select id="department" name="dept" required><option value="" disabled selected>Select department</option><option>Computer Science</option><option>Information Technology</option><option>Electronics</option><option>Mechanical Engineering</option><option>Electrical Engineering</option><option>Business Administration</option><option>Design</option><option>Other</option></select></div></div><div class="form-field"><label for="year">Study year</label><div class="select-wrap"><select id="year" name="year" required><option value="" disabled selected>Select year</option><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5+</option></select></div></div></div>
+        <div class="form-field"><label for="regPassword">Create password</label><div class="input-wrap"><span>⌑</span><input id="regPassword" name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required><button type="button" class="reveal" data-toggle-password="regPassword" aria-label="Show password">◉</button></div><div class="password-meter"><span id="passwordMeter"></span></div><small class="field-hint" id="passwordHint">Use at least 6 characters.</small></div>
+        <label class="check-label terms-check"><input type="checkbox" name="terms" required> I agree to be respectful and keep CampusLoop welcoming for everyone.</label>
+        <p class="form-error" id="registerError" role="alert"></p><button class="auth-submit" type="submit">Create my account <span>→</span></button>
+      </form>
+      <p class="auth-legal">Demo note: this prototype stores accounts in this browser only. It is not production authentication and should not be used for real passwords.</p>
+    </section>
+  </main>
+  <footer class="register-footer">CampusLoop · Campus Skill Swap Network <span>Made for campus, powered by community ✦</span></footer>
+  <div id="authToast" class="auth-toast" role="status"></div><script src="auth.js"></script>
+</body></html>
